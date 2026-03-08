@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Women's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="container">
+        <button id="wishBtn" onclick="showWish()">နှိပ်လိုက်ပါ</button>
+
+        <div id="wishMessage" class="hidden">
+            <div class="overlay"></div>
+            <div class="content-box">
+                <h2>International Women's Day</h2>
+                <p>ကမ္ဘာပေါ်မှာရှိသမျှသော အမျိုးသမီးများအားလုံး နှိပ်စက်ညှင်းပန်းခွဲခြားဆက်ဆံခံရခြင်းများမှ လွတ်မြောက်နိုင်ပါစေ။</p>
+                <button onclick="hideWish()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showWish() {
+            document.getElementById('wishMessage').classList.remove('hidden');
+        }
+        function hideWish() {
+            document.getElementById('wishMessage').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
